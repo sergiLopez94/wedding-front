@@ -1,0 +1,109 @@
+/* ================= BASE HEADER ================= */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 15px 30px;
+  width: 100%;
+  background-color: #E7E09B;
+  position: relative;
+  box-sizing: border-box;
+  font-family: 'Sometype Mono', monospace;
+  font-weight: 600;
+}
+
+.header-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* ================= BOTONES ================= */
+.btn-rsvp,
+.btn-language,
+.header-text,
+.hamburger-menu {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  outline: none;
+  box-shadow: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-rsvp,
+.btn-language {
+  padding: 10px 30px;
+  font-size: 16px;
+  border: 2px solid black;        
+  border-radius: 0; 
+}
+
+.btn-rsvp:hover,
+.btn-language:hover,
+.btn-rsvp:active,
+.btn-language:active {
+  background: #C7BD5F; 
+  border: 2px solid black;
+}
+
+.btn-rsvp:focus,
+.btn-language:focus,
+.hamburger-menu:focus,
+.header-text:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.header-text {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.header-text:hover {
+  text-decoration: underline;
+}
+
+/* ================= VISIBILIDAD ================= */
+.desktop-only { display: inline-block; }
+.mobile-only { display: none; }
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .desktop-only { display: none; }
+  .mobile-only { display: inline-block; }
+
+  .header-title { font-size: 20px; }
+
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #E7E09B;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    z-index: 10;
+  }
+
+  .hamburger-menu {
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+  }
+}

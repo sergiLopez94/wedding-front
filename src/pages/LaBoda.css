@@ -1,0 +1,84 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px; 
+}
+
+.la-boda-page {
+  width: 100%;
+  min-height: 100%;
+  background: #C7BD5F;
+  overflow-y: auto;
+}
+
+.image-fotomaton {
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+    opacity: 0.6;
+    object-fit: cover; 
+  }
+  
+  
+
+.header-description {
+  display: flex;
+  justify-content: space-between; 
+  font-family: 'Sometype Mono', monospace;
+  color: white;   
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: flex-start;
+}
+
+.header-section {
+  font-weight: bold;
+  font-size: 3.5rem; 
+  line-height: 1.1;
+}
+
+.description-section {
+  font-weight: bold;
+  font-size: 2rem; 
+  text-align: right;
+}
+
+.image-timelineboda{
+    align-self: right;
+}
+
+/* ================== MOBILE ================== */
+@media (max-width: 768px) {
+  .header-description {
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: flex-end;
+    gap: 1rem; 
+  }
+
+  .header-section {
+    font-size: 2rem;
+    text-align: right;
+  }
+
+  .description-section {
+    font-size: 1rem; 
+    text-align: right;
+  }
+
+  @media (max-width: 768px) {
+  
+    .image-fotomaton {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      height: 80px;
+    }
+  }
+  
+
+}
