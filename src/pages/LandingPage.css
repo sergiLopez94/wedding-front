@@ -49,19 +49,21 @@ body {
   
   .enter-button {
     margin-top: 20px;
-    padding: 10px 30px;
-    font-size: 16px;
+    padding: 20px 30px;
+    font-size: 18px;
     cursor: pointer;
     background-color: transparent;   
     border: 2px solid white;        
     border-radius: 0;               
     color: white;                  
     transition: background-color 0.3s, color 0.3s; 
+    font-size: 'Sometype Mono', monospace;
   }
   
   .enter-button:hover {
     background-color: black;       
-    color: white;              
+    color: white;  
+    border: 2px solid white;             
   }
 
   /* MEDIA QUERIES */

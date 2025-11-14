@@ -26,6 +26,36 @@
   align-items: center;
 }
 
+.header-text {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+
+.header-text:hover {
+  color: #b4b4b4; 
+  transform: scale(1.05);
+}
+
+/* When clicking (active state) */
+.header-text:active {
+  color: #d6bfff;   
+  transform: scale(0.97);
+}
+
+
+.header-text.active {
+  text-decoration: underline;
+  color: #ffffff; 
+}
+
+
+
+
+
+
+
 /* ================= BOTONES ================= */
 .btn-rsvp,
 .btn-language,
@@ -40,6 +70,7 @@
   outline: none;
   box-shadow: none;
   transition: background-color 0.3s, color 0.3s;
+  font-family: 'Sometype Mono', monospace;
 }
 
 .btn-rsvp,

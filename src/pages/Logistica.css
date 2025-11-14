@@ -1,0 +1,63 @@
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; 
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .logistica-page {
+    width: 100%;
+    min-height: 100%;
+    background: #69506F;
+    overflow-y: auto;
+  }
+
+  .image-fotomaton {
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+    opacity: 0.6;
+    object-fit: cover; 
+}
+
+.bus-taxi{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 1rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    color: white;  
+}
+
+.bus-taxi h3{
+    font-family: 'Sometype Mono', monospace;
+    color: white;   
+    font-size: 28px;
+    text-decoration: underline;
+    margin-top: 10px !important;
+}
+
+.bus,
+.taxi{
+    width: 20vw;
+}
+
+
+  
+.hotels-section{
+    background-color: #C7BD5F;
+}
+
+    @media (max-width: 768px) { 
+        .image-fotomaton {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          height: 80px;
+        }
+      }
