@@ -6,6 +6,7 @@ import fotomaton from '../assets/images/fotomaton.png';
 import timelineboda from '../assets/images/timeline-boda.png';
 import collage_grande from '../assets/images/collage_grande.png';
 import pedida from '../assets/images/pedida.png';
+import girasoles from '../assets/images/girasoles.jpg';
 
 const LaBoda: React.FC = () => {
   const navigate = useNavigate();
@@ -25,9 +26,26 @@ const LaBoda: React.FC = () => {
         </div>
         <img className='image-timelineboda' src={timelineboda}></img>
         <div className='adress-link'>
-          <p>Lloc: Finca Mas Batlle</p>
+          <p>
+            <span className="highlight">Lloc: Finca Mas Batlle</span>
+          </p>
           <a href="https://www.google.com/maps/place/Finca+Mas+Batlle/@41.9637023,2.8452784,17z/data=!3m1!4b1!4m6!3m5!1s0x12bae707deb4fc2b:0x87b8018433078450!8m2!3d41.9637023!4d2.8452784!16s%2Fg%2F11l6yfvdqd?hl=es&entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D">Carretera dels Àngels, Km. 0, 2, <br/>17241 La Creueta, Girona</a>
         </div>
+
+        <div className='lloc-section' style={{ 
+          backgroundImage: `url(${girasoles})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+            }}
+          >
+          <h1 className='header-section'>el<br />lloc</h1>
+          <p className='lloc-description'>
+            vosaltres, nosaltres i d'escenari l'Empordà. 
+            No se'ns acut un millor lloc per celebrar!
+          </p>
+        </div>
+
 
         <div className='dresscode-section'> {/* DRESS CODE SECTION */}
           <div className='text-dresscode'>
