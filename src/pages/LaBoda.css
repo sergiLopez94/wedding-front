@@ -203,7 +203,7 @@ font-family: 'Roboto', sans-serif;
   font-size: 1.6rem !important;
   padding-bottom: 6rem;
   font-weight: bold; 
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .contact-details{
@@ -339,6 +339,32 @@ padding-top: 2rem;
 }
 .formulari-section {
   height: 30rem;
+}
+
+.header-section-regal {
+  font-size: 2rem;  
+  padding-top: 4rem; 
+}
+
+.regal-section p {
+  text-align: center;
+  color: #444444;
+  font-size: 12px;
+  padding-top: 1rem;
+}
+
+.account-details {
+  font-size: 1.2rem !important;
+  padding-bottom: 3rem;
+}
+
+.dubtes-section {
+  font-size: 12px !important;
+  
+}
+
+.gif-risa{
+  margin-bottom: 2rem !important;
 }
   
 }

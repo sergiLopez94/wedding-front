@@ -5,6 +5,8 @@ import fotomaton from '../assets/images/fotomaton.png';
 import taxi from '../assets/images/taxi.svg';
 import bus from '../assets/images/bus.svg';
 import mapaGirona from '../assets/images/mapa_girona.png';
+import Footer from '../components/Footer';
+import BackToTop from '../components/BackToTop';
 
 
 const Logistica: React.FC = () => {
@@ -41,7 +43,7 @@ return(
         <div className='hotels-section'> {/* HOTELS SECTION */}
           <h1 className='header-section-transport'>hotels</h1>  
           <p className="description-section-transport">
-          si voleu agafar els busos per anar i tonrnar de la boda us recomanem buscar allotjament pel centre de Girona.
+          si voleu agafar els busos per anar i tornar de la boda us recomanem buscar allotjament pel centre de Girona.
           <br />Podeu buscar al Barri Vell i El Call
           </p>    
           <div className='mapa-hotels'>
@@ -59,6 +61,9 @@ return(
 
 
         </main>
+
+        <Footer/>
+        <BackToTop/>
     </div>
 
     );

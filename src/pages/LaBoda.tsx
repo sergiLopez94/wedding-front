@@ -7,6 +7,7 @@ import timelineboda from '../assets/images/timeline-boda.png';
 import collage_grande from '../assets/images/collage_grande.png';
 import pedida from '../assets/images/pedida.png';
 import girasoles from '../assets/images/girasoles.jpg';
+import BackToTop from '../components/BackToTop'; 
 
 const LaBoda: React.FC = () => {
   const navigate = useNavigate();
@@ -65,7 +66,11 @@ const LaBoda: React.FC = () => {
         <div className='formulari-section'>  {/* FORMULARI SECTION */}
           <h1 className='header-section'>t'apuntes?</h1>
           <p>Per tal de preparar la millor celebració possible necessitem que ens confirmeu assistència <b>com més aviat millor.</b><br/> Aquest enllaç us portarà a un Google Forms on podreu confirmar-nos si veniu:</p>
-          <button className="formulari-button" onClick={() => navigate('/laboda')}>
+          <button className="formulari-button" 
+           onClick={() => {
+            navigate('/formulari');
+            window.scrollTo(0, 0);
+          }}>
           CONFIRMA ASSISTENCIA
           </button>
           <img className='image-pedida' src={pedida}></img>
@@ -74,8 +79,8 @@ const LaBoda: React.FC = () => {
         <div className='regal-section'>  {/* REGAL SECTION */}
           <h1 className='header-section-regal'>regal</h1>
           <p><b>La vostra presència és el millor regal que podem demanar! </b><br/>
-            Però si voleu fer una contribució per la nostra lluna de mel us deixem aquí els detalls:</p>
-          <p className='account-details'><b>ES73987214982388838383</b></p>
+          Però si voleu fer una contribució ens ajudarà molt! Us deixem aquí els detalls:</p>
+          <p className='account-details'><b>DE54 1001 1001 2397 6800 53</b><br/>BIC: NTSBDEB1XXX</p>
         </div>
 
         <div className='dubtes-section'> {/* DUBTES SECTION */}
@@ -99,6 +104,8 @@ const LaBoda: React.FC = () => {
         </div>
 
       </main>
+
+      <BackToTop/>
     </div>
   );
 };

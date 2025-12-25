@@ -11,25 +11,27 @@ const Header: React.FC = () => {
     {/* Desktop */}
     <button className="btn-language desktop-only">CAT/ES</button>
     <Link to="/laboda" className="header-text desktop-only">la boda</Link>
-    <button className="header-text desktop-only">nosaltres</button>
+    <Link to="/nosaltres" className="header-text desktop-only">nosaltres</Link>
     <h2 className="header-title">Paula &<br />Sergi</h2>
     <Link to="/logistica" className="header-text desktop-only">logística</Link>
-    <button className="header-text desktop-only">galeria</button>
-    <button className="btn-rsvp desktop-only">RSVP</button>
+    <Link to="/galeria" className="header-text desktop-only">galeria</Link>
+    <Link to="/formulari" className="btn-rsvp desktop-only">RSVP</Link>
 
     {/* Mobile */}
     <button className="hamburger-menu mobile-only" onClick={toggleMenu}>☰</button>
     {menuOpen && (
       <nav className="mobile-menu mobile-only">
         <button className="btn-language">CAT/ES</button>
-        <button className="header-text">la boda</button>
-        <button className="header-text">nosaltres</button>
-        <button className="header-text">logística</button>
-        <button className="header-text">galeria</button>
-        <button className="btn-rsvp">RSVP</button>
+        <Link to="/laboda" className="header-text">la boda</Link>
+        <Link to="/nosaltres" className="header-text">nosaltres</Link>
+        <Link to="/logistica" className="header-text">logística</Link>
+        <Link to="/logistica" className="header-text">galeria</Link>
+        <Link to="/formulari" className="btn-rsvp">RSVP</Link>
       </nav>
     )}
+    
 </header>
+
 
   );
 };
