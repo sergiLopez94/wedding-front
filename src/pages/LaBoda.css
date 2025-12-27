@@ -1,0 +1,370 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px; 
+}
+
+.la-boda-page {
+  width: 100%;
+  min-height: 100%;
+  background: #C7BD5F;
+  overflow-y: auto;
+}
+
+.image-fotomaton {
+  width: 100%;
+  max-width: 100%;
+  height: auto; 
+  display: block;
+  margin: 0 auto;
+  opacity: 0.6;
+  object-fit: cover; 
+  }
+  
+.header-description {
+  display: flex;
+  justify-content: space-between; 
+  font-family: 'Sometype Mono', monospace;
+  color: white;   
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: flex-start;
+}
+
+.header-section {
+  font-weight: bold; 
+  line-height: 1.1;
+  font-family: 'Sometype Mono', monospace;
+  color: white;   
+  font-size: 4.250rem;
+}
+
+.description-section {
+  font-weight: bold;
+  padding-top: 2rem;
+  font-size: 2rem; 
+  text-align: right;
+}
+
+.image-timelineboda{
+    align-self: right;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    padding-right: 5%;
+    padding-top: 1rem;   
+}
+
+.adress-link p {
+  font-size: 2.25rem;
+  width: 400;
+  color: #444444;
+  font-family: 'Sometype Mono', monospace;
+  text-align: right;
+  font-weight: 500;
+  padding-right: 5%;
+  margin-bottom: 0.5rem;
+  margin-top: 3rem;
+}
+
+.adress-link a {
+  font-size: 1rem;
+  display: block;
+  text-align: right;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.adress-link a:hover {
+  opacity: 0.8;
+}
+
+.highlight {
+  background-color: #E7E09B;
+  padding: 6px 4px;          
+  line-height: 1;          
+}
+
+.lloc-section{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2rem;
+  padding-bottom: 32rem;
+}
+
+.lloc-section p{
+font-size: 28px;
+color: white;
+font-family: 'Roboto', sans-serif;
+}
+
+.dresscode-section{
+  background-color: #69506F;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 4rem;
+  color: white;
+  font-family: 'Roboto', sans-serif; 
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.collage_grande{
+  width: 100%;
+}
+
+.dresscode-description{
+  width: 21rem;
+  font-size: 1.125rem;
+}
+
+.formulari-section{
+  position: relative;              
+  background-color: #C4B2C7;
+  padding: 1rem 5%;              
+  height: 40rem;               
+  box-sizing: border-box;
+  padding-top: 3rem;
+}
+
+.formulari-section p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem; 
+  margin: 0 0 3rem 0;
+  text-align: center;
+}
+
+.formulari-button{
+  display: block;       
+  margin: 1.25rem auto; 
+  margin-bottom: 2rem;
+  padding: 1rem 2.5rem; 
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  border-radius: 0;
+  transition: background-color .3s, color .3s, border-color .3s;
+  font-family: 'Sometype Mono', monospace;
+}
+
+.formulari-button:hover {
+  background-color: #69506F;
+  color: white;
+  border-color: white;
+}
+
+
+.image-pedida{
+  position: absolute; 
+  right: 5%;                
+  top: 65%;                 
+  max-width: 35rem;         
+  width: 35vw;              
+  height: auto;
+  display: block;
+}
+
+.regal-section{
+  background-color: #E7E09B; 
+  margin: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.header-section-regal{
+  margin: 0;
+  font-weight: bold;
+  font-size: 3.5rem; 
+  line-height: 1.1;
+  font-family: 'Sometype Mono', monospace;
+  color: white;   
+  padding-top: 4rem;
+  font-size: 4.250rem;
+}
+
+.regal-section p {
+  text-align: center;
+  color: #444444;
+  font-size: 1.125rem; 
+  padding-top: 4rem;
+}
+
+.account-details{
+  font-family: 'Sometype Mono', monospace;
+  font-size: 1.6rem !important;
+  padding-bottom: 6rem;
+  font-weight: bold; 
+  margin-top: 0.5rem;
+}
+
+.contact-details{
+  display: flex;
+  justify-content: space-between; 
+
+}
+
+.dubtes-section{
+  padding-left: 5%;
+  padding-right: 5%;
+  gap: 5rem;
+  color: #444444;
+  font-size: 1.125rem; 
+}
+
+.name{
+  font-family: 'Sometype Mono', monospace;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+
+.gif-risa{
+  margin-right: 3rem;                                
+  max-width: 20rem;         
+  width: 20vw;              
+  height: auto; 
+  margin-bottom: 4rem;
+} 
+
+.details-paula p,
+.details-sergi p {
+  margin: 2px 0;
+  line-height: 1.5;
+}
+
+.details-sergi,
+.details-paula {
+padding-top: 2rem;
+}
+
+.details-paula{
+  padding-left: 3rem;
+}
+
+
+/* ---------- RESPONSIVE: en pantallas pequeñas la imagen baja y no está absoluta ---------- */
+@media (max-width: 768px) {
+  .formulari-section {
+    padding: 1rem 4%;
+    min-height: auto;
+  }
+
+  .image-pedida {
+    position: static;    
+    transform: none;
+    width: 80%;
+    max-width: none;
+    margin: 1rem auto 0; 
+    display: block;
+  }
+
+  .formulari-button {
+    width: 80%;
+    max-width: 420px;
+  }
+
+  .header-description {
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: flex-end;
+    gap: 1rem; 
+  }
+
+  .header-section {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .description-section {
+    font-size: 1rem; 
+  }
+
+    .image-fotomaton {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      height: 80px;
+    }
+
+    .image-timelineboda{
+      width: 80%;
+    }
+
+    .adress-link a{
+      font-size: 0.7rem;
+      margin-bottom: 3rem;
+    }
+
+    .adress-link p{
+      font-size: 1rem;
+    }
+
+    .lloc-section p {
+      font-size: 16px;
+  }
+
+    .lloc-section{
+      padding-bottom: 17rem;
+    }
+
+    .dresscode-section {
+      background-color: #69506F;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      display: inline-block;
+  }
+
+  .dresscode-description {
+    font-size: 14px;
+    padding-bottom: 2rem;
+}
+
+.formulari-section p {
+  font-size: 12px;
+  margin: 0 0 2rem 0;
+}
+.formulari-button {
+  transform: scale(0.8);
+}
+.formulari-section {
+  height: 30rem;
+}
+
+.header-section-regal {
+  font-size: 2rem;  
+  padding-top: 4rem; 
+}
+
+.regal-section p {
+  text-align: center;
+  color: #444444;
+  font-size: 12px;
+  padding-top: 1rem;
+}
+
+.account-details {
+  font-size: 1.2rem !important;
+  padding-bottom: 3rem;
+}
+
+.dubtes-section {
+  font-size: 12px !important;
+  
+}
+
+.gif-risa{
+  margin-bottom: 2rem !important;
+}
+  
+}

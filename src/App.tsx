@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
+import LaBoda from './pages/LaBoda';
+import Logistica from './pages/Logistica';
+import Nosaltres from './pages/Nosaltres';
+import Formulari from './pages/Formulari';
+import Galeria from './pages/Galeria';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/laboda" element={<LaBoda />} />
+        <Route path="/logistica" element={<Logistica />} />
+        <Route path="/nosaltres" element={<Nosaltres />} />
+        <Route path="/formulari" element={<Formulari />} />
+        <Route path="/galeria" element={<Galeria />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
+

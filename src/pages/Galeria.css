@@ -1,0 +1,45 @@
+.galeria-page {
+    min-height: 100vh;
+    background-color: #C7BD5F; 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; 
+  }
+  
+  
+  .galeria-content h1 {
+    font-family: 'Sometype Mono', monospace;
+    font-size: 2rem;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .image-fotomaton {
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+    opacity: 0.6;
+    object-fit: cover; 
+    }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .galeria-content h1 {
+      font-size: 2rem;
+    }
+
+    .image-fotomaton {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        height: 80px;
+      }
+  }
+  

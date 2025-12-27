@@ -1,0 +1,99 @@
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; 
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .logistica-page {
+    width: 100%;
+    min-height: 100%;
+    background: #69506F;
+    overflow-y: auto;
+  }
+
+  .image-fotomaton {
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+    opacity: 0.6;
+    object-fit: cover; 
+}
+
+.header-section-transport {
+  font-weight: bold;
+  font-size: 4.250rem;
+  font-family: 'Sometype Mono', monospace;
+  color: white;   
+  padding-left: 5%;
+  margin-bottom: 1rem;
+}
+
+.description-section-transport { 
+  text-align: left;
+  font-size: 1.125rem;
+  font-family: 'Roboto', sans-serif;
+  color: white;   
+  padding-left: 5%;
+  margin-bottom: 5rem;
+}
+
+.transport-section{
+  padding-bottom: 4rem;
+}
+
+.bus-taxi{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 1rem;
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+    color: white;  
+}
+
+.bus-taxi h3{
+    font-family: 'Sometype Mono', monospace;
+    color: white;   
+    font-size: 28px;
+    text-decoration: underline;
+    margin-top: 10px !important;
+}
+
+.bus,
+.taxi{
+    width: 20vw;
+}
+  
+.hotels-section{
+    background-color: #C7BD5F;
+    padding-top: 2rem;
+}
+
+.mapa-hotels{
+  display: flex;
+  justify-content: space-between; 
+  color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size:18px;
+  padding-bottom: 4rem;
+}
+
+.hotel{
+  font-family: 'Sometype Mono', monospace;
+  font-weight: 400;
+}
+
+    @media (max-width: 768px) { 
+        .image-fotomaton {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          height: 80px;
+        }
+      }
