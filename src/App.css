@@ -5,6 +5,17 @@
   text-align: center;
 }
 
+/* Fuente general para todo el cuerpo */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Fuente especial para títulos */
+.font-mono {
+  font-family: 'Sometype Mono', monospace;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
