@@ -23,6 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 .env
+./encode-key.ts
 
 # Snyk Security Extension - AI Rules (auto-generated)
 .github/instructions/snyk_rules.instructions.md
