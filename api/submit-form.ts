@@ -29,9 +29,12 @@ export default async function handler(
     console.log('🔧 Checking environment variables:');
     console.log('  GOOGLE_CLIENT_EMAIL:', process.env.GOOGLE_CLIENT_EMAIL ? '✅ Set' : '❌ Missing');
     console.log('  GOOGLE_PRIVATE_KEY:', process.env.GOOGLE_PRIVATE_KEY ? '✅ Set' : '❌ Missing');
+    console.log('  GOOGLE_PRIVATE_KEY_BASE64:', process.env.GOOGLE_PRIVATE_KEY_BASE64 ? '✅ Set' : '❌ Missing');
     console.log('  GOOGLE_SHEET_ID:', process.env.GOOGLE_SHEET_ID ? '✅ Set' : '❌ Missing');
 
-    if (!process.env.GOOGLE_CLIENT_EMAIL || !process.env.GOOGLE_PRIVATE_KEY || !process.env.GOOGLE_SHEET_ID) {
+    const hasPrivateKey = process.env.GOOGLE_PRIVATE_KEY || process.env.GOOGLE_PRIVATE_KEY_BASE64;
+    
+    if (!process.env.GOOGLE_CLIENT_EMAIL || !hasPrivateKey || !process.env.GOOGLE_SHEET_ID) {
       console.log('❌ Missing environment variables');
       return res.status(500).json({ error: 'Server configuration error: missing environment variables' });
     }
@@ -40,16 +43,26 @@ export default async function handler(
     console.log('🔐 Initializing Google Auth...');
     
     // Try to parse and validate the private key
-    let privateKey = process.env.GOOGLE_PRIVATE_KEY;
-    if (privateKey) {
-      // Replace escaped newlines with actual newlines
-      privateKey = privateKey.replace(/\\n/g, '\n');
-      console.log('🔑 Private key format check:', {
-        startsCorrectly: privateKey.startsWith('-----BEGIN PRIVATE KEY-----'),
-        endsCorrectly: privateKey.includes('-----END PRIVATE KEY-----'),
-        length: privateKey.length
-      });
+    let privateKey: string;
+    
+    if (process.env.GOOGLE_PRIVATE_KEY_BASE64) {
+      // Decode from base64 (recommended method)
+      console.log('🔑 Using base64-encoded private key');
+      privateKey = Buffer.from(process.env.GOOGLE_PRIVATE_KEY_BASE64, 'base64').toString('utf-8');
+    } else if (process.env.GOOGLE_PRIVATE_KEY) {
+      // Try to handle escaped newlines
+      console.log('🔑 Using GOOGLE_PRIVATE_KEY with newline replacement');
+      privateKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n');
+    } else {
+      throw new Error('No private key found');
     }
+    
+    console.log('🔑 Private key format check:', {
+      startsCorrectly: privateKey.startsWith('-----BEGIN PRIVATE KEY-----'),
+      endsCorrectly: privateKey.includes('-----END PRIVATE KEY-----'),
+      length: privateKey.length,
+      hasRealNewlines: privateKey.includes('\n')
+    });
     
     const auth = new google.auth.GoogleAuth({
       credentials: {
