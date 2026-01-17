@@ -51,3 +51,9 @@ body {
 .read-the-docs {
   color: #888;
 }
+
+@media (prefers-color-scheme: dark) {
+  header {
+    color: #000000;
+  }
+}

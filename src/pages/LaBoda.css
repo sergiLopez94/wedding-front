@@ -13,6 +13,11 @@ html, body, #root {
   overflow-y: auto;
 }
 
+
+.la-boda-page section {
+  scroll-margin-top: 100px; /* altura de tu header */
+}
+
 .image-fotomaton {
   width: 100%;
   max-width: 100%;
@@ -132,6 +137,7 @@ font-family: 'Roboto', sans-serif;
   height: 40rem;               
   box-sizing: border-box;
   padding-top: 3rem;
+  color: #444444;
 }
 
 .formulari-section p {
