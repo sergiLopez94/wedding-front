@@ -8,6 +8,7 @@
   background-color: #E7E09B;
   position: relative;
   box-sizing: border-box;
+  color: #000000;
   font-family: 'Sometype Mono', monospace;
   font-weight: 600;
 }
@@ -17,6 +18,7 @@
   font-weight: 800;
   font-size: 28px;
   line-height: 1.2;
+  color: black;
 }
 
 .header-left,
@@ -27,20 +29,20 @@
 }
 
 .header-text {
-  color: white;
   text-decoration: none;
+  color: black;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
 
 .header-text:hover {
   color: #b4b4b4; 
-  transform: scale(1.05);
 }
 
 .header-text:active {
+    text-decoration: underline;
+    color: inherit;
   color: #d6bfff;   
-  transform: scale(0.97);
 }
 
 
@@ -110,6 +112,40 @@
 }
 
 
+.boda-dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.boda-link {
+  cursor: pointer;
+}
+
+.boda-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #E7E09B;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 150px;
+  z-index: 100;
+  color: black;
+  font-family: 'Sometype Mono', monospace;
+  font-size: 14px;
+}
+
+.boda-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.boda-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+
 /* ================= VISIBILIDAD ================= */
 .desktop-only { display: inline-block; }
 .mobile-only { display: none; }
@@ -123,6 +159,27 @@
 
   .mobile-only {
     display: inline-block;
+  }
+
+  .boda-link {
+    cursor: pointer;
+    font-size: 20px; /* igual que header-text */
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+  }
+
+  .boda-dropdown {
+    position: static; 
+    background: transparent; 
+    margin-left: 0;
+    padding-left: 1.2rem; 
+    font-weight: 600;
+  }
+
+  .boda-dropdown li {
+    padding: 6x 0; 
+    color: #333333; 
   }
 
  /* MENÚ LATERAL DERECHO */

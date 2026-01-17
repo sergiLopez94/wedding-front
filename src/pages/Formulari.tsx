@@ -82,25 +82,21 @@ const Formulari: React.FC = () => {
           <div className="question-block assistencia">
             <label className='pregunta'>Vindràs a la boda?(*)</label>
             <div className="options">
-              <label>
+            {["sí", "no"].map((option) => (
+              <label key={option}>
                 <input
                   type="radio"
                   name="asistencia"
-                  value="sí"
-                  onChange={(e) => setForm({ ...form, asistencia: e.target.value })}
+                  value={option}
+                  checked={form.asistencia === option}  // <--- clave
+                  onChange={(e) =>
+                    setForm({ ...form, asistencia: e.target.value })
+                  }
                 />
-                Sí
+                {option}
               </label>
-              <label>
-                <input
-                  type="radio"
-                  name="asistencia"
-                  value="no"
-                  onChange={(e) => setForm({ ...form, asistencia: e.target.value })}
-                />
-                No
-              </label>
-            </div>
+            ))}
+          </div>
           </div>
 
           {/* 3 - Alergias */}
@@ -118,8 +114,9 @@ const Formulari: React.FC = () => {
 
           {/* 4 - Bus */}
           <div className="question-block transportformulari">
-            <label className='pregunta'>Faràs servir el bus de la boda?(*)</label>
-            <div className="options">
+            <label className='pregunta black'>Faràs servir el bus de la boda?(*)  </label>
+            <p className='black'><em>info: el bus sortirà del centre de Girona sobre les 12.30h i tornarà al centre de Girona a les 24h // horaris orientatius</em></p>
+            <div className="options black">
               {["Anada", "Tornada", "Anada i tornada", "No el necessito"].map(
                 (option) => (
                   <label key={option}>
@@ -127,6 +124,7 @@ const Formulari: React.FC = () => {
                       type="radio"
                       name="bus"
                       value={option}
+                      checked={form.bus === option} // <--- clave
                       onChange={(e) => setForm({ ...form, bus: e.target.value })}
                     />
                     {option}
