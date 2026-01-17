@@ -34,7 +34,7 @@ export default async function handler(
     // Append the data to the sheet
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId,
-      range: 'Sheet1!A:E', // Adjust this range based on your sheet structure
+      range: 'Sheet1!A:F', // 6 columns: Timestamp, Name, Asistencia, Alergias, Bus, Canciones
       valueInputOption: 'USER_ENTERED',
       requestBody: {
         values: [
