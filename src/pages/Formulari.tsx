@@ -17,7 +17,7 @@ const Formulari: React.FC = () => {
     canciones: ""
   });
 
-  const handleSend = () => {
+  const handleSend = async () => {
     // Validación campos obligatorios
     if (!form.name || !form.asistencia || !form.bus) {
       setError(true);
@@ -28,15 +28,31 @@ const Formulari: React.FC = () => {
     // Si todo correcto
     setSending(true);
 
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
+      }
+
       setSending(false);
       setSent(true);
 
       setTimeout(() => {
         window.location.reload();
       }, 1000);
-      
-    }, 2000); 
+    } catch (err) {
+      console.error('Error submitting form:', err);
+      setSending(false);
+      setError(true);
+      setTimeout(() => setError(false), 2500);
+    }
   };
 
   return (
