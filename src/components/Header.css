@@ -216,6 +216,10 @@
   transform: translateX(0);
 }
 
+.hamburger-menu{
+  font-size: 30px;
+}
+
 @keyframes slideIn {
   from {
     transform: translateX(-100%);
