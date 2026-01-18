@@ -65,8 +65,7 @@ const Header: React.FC = () => {
     <button className="hamburger-menu mobile-only" onClick={toggleMenu}>☰</button>
     {menuOpen && (
       <nav className={`mobile-menu mobile-only ${menuOpen ? 'open' : ''}`}>  
-      <button className="btn-language mobile-only" onClick={translateToSpanish}>
-      ES
+      <button className="header-text mobile-only" onClick={translateToSpanish}>
     </button>
       <div className="boda-dropdown-container">
         <span onClick={toggleBodaDropdown} className="boda-link">la boda</span>

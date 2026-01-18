@@ -99,6 +99,7 @@ body {
 
     .title {
         font-size: 50px; 
+        margin-top: -2rem;
       }
 
       .landing-container {

@@ -173,12 +173,12 @@ html, body, #root {
   
 
   .timeline-content h3 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 0.5rem;
   }
 
   .timeline-content p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
