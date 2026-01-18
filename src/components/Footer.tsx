@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
         <div className='details-sergi'>
           <p>Resposta amb (possible) delay: </p>
           <p className='name'><b>Sergi</b></p>
-          <p>+49 15128707726</p>
+          <p>+34 670 20 78 95</p>
         </div>
         <div>
           <img

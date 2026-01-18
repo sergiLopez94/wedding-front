@@ -24,6 +24,10 @@ html, body, #root {
     object-fit: cover; 
 }
 
+.timeline-container {
+  margin-bottom: 4rem;
+}
+
 .header-section-nosaltres {
   font-weight: bold;
   font-size: 4.250rem;
@@ -117,6 +121,7 @@ html, body, #root {
     align-items: center;
     gap: 2rem;
     padding: 0 5%;
+    margin-bottom: 3rem;
   }
 
   .timeline-item {

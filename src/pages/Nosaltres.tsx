@@ -20,7 +20,7 @@ const events = [
     {
       year: "2018",
       title: "el dels inicis.",
-      text: "Ens vam conèixer un Nadal a Pierrot <3",
+      text: "Ens vam conèixer un Nadal a Sant Cugat <3",
       image: foto2018,
     },
     {

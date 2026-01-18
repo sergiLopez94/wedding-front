@@ -80,7 +80,31 @@ html, body, #root {
     accent-color: #69506F; /* color de las bolitas */
     }
     
-    
+    input,
+    textarea,
+    select {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  -webkit-text-fill-color: #000000;
+}
+
+input[type="radio"] {
+  accent-color: #000000;   /* color del punto */
+  background-color: #ffffff;
+}
+
+.black{
+  color: #444444;
+}
+
     .send-button {
     padding: 0.8rem 1.5rem;
     background: white;
@@ -92,6 +116,7 @@ html, body, #root {
     margin: 1rem auto;
     font-family: 'Sometype Mono', monospace;
     text-align: center;
+    color: #444444;
     }
     
     .send-button:hover {
