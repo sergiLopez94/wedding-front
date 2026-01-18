@@ -55,7 +55,7 @@ const LaBoda: React.FC = () => {
           <h1 className='header-section'>el<br />lloc</h1>
           <p className='lloc-description'>
             vosaltres, nosaltres i d'escenari l'Empordà. 
-            No se'ns acut un millor lloc per celebrar!
+            No se'ns acudeix un millor lloc per celebrar!
           </p>
         </div>
 
@@ -66,7 +66,7 @@ const LaBoda: React.FC = () => {
           <p className='dresscode-description'>Us volem veure a tots ben guapos!<br />
             Homes  traje fosc i corbata. <br />
             Dones amb vestit midi o llarg.<br /><br />
-            Oviament podeu venir com volgeu! <br /> però us deixem unes fotos d'inspiració :)
+            Obviament podeu venir com volgeu! <br /> Tot i així, si necessiteu una mica d'inspiració aquí teniu algunes fotos :)
             </p>
           </div>  
 
@@ -77,7 +77,7 @@ const LaBoda: React.FC = () => {
 
         <div id="formulari" className='formulari-section'>  {/* FORMULARI SECTION */}
           <h1 className='header-section'>t'apuntes?</h1>
-          <p>Per tal de preparar la millor celebració possible necessitem que ens confirmeu assistència <b>com més aviat millor.</b><br/> Aquest enllaç us portarà a un Google Forms on podreu confirmar-nos si veniu:</p>
+          <p>Per tal de preparar la millor celebració possible necessitem que ens confirmeu l'assistència <b>com més aviat millor.</b><br/> Aquest enllaç us portarà a un formulari on podreu confirmar-nos si veniu:</p>
           <button className="formulari-button" 
            onClick={() => {
             navigate('/formulari');
