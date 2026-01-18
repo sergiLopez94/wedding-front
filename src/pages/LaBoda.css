@@ -15,7 +15,7 @@ html, body, #root {
 
 
 .la-boda-page section {
-  scroll-margin-top: 100px; /* altura de tu header */
+  scroll-margin-top: 100px; 
 }
 
 .image-fotomaton {
@@ -286,12 +286,12 @@ padding-top: 2rem;
   }
 
   .header-section {
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: left;
   }
 
   .description-section {
-    font-size: 1rem; 
+    font-size: 1.2rem; 
   }
 
     .image-fotomaton {
@@ -302,20 +302,20 @@ padding-top: 2rem;
     }
 
     .image-timelineboda{
-      width: 80%;
+      width: 85%;
     }
 
     .adress-link a{
-      font-size: 0.7rem;
+      font-size: 1rem;
       margin-bottom: 3rem;
     }
 
     .adress-link p{
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     .lloc-section p {
-      font-size: 16px;
+      font-size: 18px;
   }
 
     .lloc-section{
@@ -337,7 +337,7 @@ padding-top: 2rem;
 }
 
 .formulari-section p {
-  font-size: 12px;
+  font-size: 14px;
   margin: 0 0 2rem 0;
 }
 .formulari-button {
@@ -349,23 +349,23 @@ padding-top: 2rem;
 
 .header-section-regal {
   font-size: 2rem;  
-  padding-top: 4rem; 
+  padding-top: 7rem; 
 }
 
 .regal-section p {
   text-align: center;
   color: #444444;
-  font-size: 12px;
+  font-size: 14px;
   padding-top: 1rem;
 }
 
 .account-details {
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
   padding-bottom: 3rem;
 }
 
 .dubtes-section {
-  font-size: 12px !important;
+  font-size: 14px !important;
   
 }
 
