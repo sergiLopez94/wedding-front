@@ -82,7 +82,7 @@ const Nosaltres: React.FC = () => {
 
             <img className='image-fotomaton' src={fotomaton}></img>
 
-            <h1 className='header-section-nosaltres'>la nostra<br/> história</h1> 
+            <h1 className='header-section-nosaltres'>la nostra<br/> història</h1> 
 
             <div className="timeline-container">
             {events.map((ev, i) => (
