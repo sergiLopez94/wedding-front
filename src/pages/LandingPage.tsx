@@ -5,17 +5,49 @@ import fotosergi from '../assets/images/sergi_peque.jpeg';
 import fotopaula from '../assets/images/paula_peque1.jpeg';
 
 
+
 const LandingPage: React.FC = () => {
   const navigate = useNavigate();
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleEnter = () => {
-    if (password === "ps2026") {    
+  const handleEnter = async () => {
+    const isPasswdValid = await checkPassword();
+    if (isPasswdValid) {    
       navigate('/laboda');
     } else {
-      setError('ep! contrasenya incorrecta');
+      setError('Constrasenya incorrecta');
     }
+  };
+
+  const checkPassword = async () => {
+      if(password.trim() === '' || !password){
+        setError('Contrasenya buida');
+        return false;
+      }
+      try {
+      const response = await fetch('/api/checkPasswd', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ password }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
+      }
+
+      if(response.status === 200){
+        return true;
+      }
+      else{
+        return false;
+      }
+    } catch (err) {
+      console.error('Error submitting password:', err);
+    }
+
   };
 
   return (
