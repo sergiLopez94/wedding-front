@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './LandingPage.css';
 import fotosergi from '../assets/images/sergi_peque.jpeg';
 import fotopaula from '../assets/images/paula_peque1.jpeg';
-import type { VercelRequest, VercelResponse } from '@vercel/node';
+
 
 
 const LandingPage: React.FC = () => {
