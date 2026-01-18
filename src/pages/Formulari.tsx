@@ -102,7 +102,7 @@ const Formulari: React.FC = () => {
           {/* 3 - Alergias */}
           <div className="question-block alergia">
             <label className='pregunta'>
-              Al·lèrgies o intoleràncies? Si tens al·lèrgia a algun aliment avisan's si us plau, no volem que et converteixis en peix globus el dia del casament (ni cap altre dia). També pots fer-nos saber si ets vegetarià, vegà, etc.
+              Al·lèrgies o intoleràncies? Si tens al·lèrgia a algun aliment avisa'ns si us plau, no volem que et converteixis en peix globus el dia del casament (ni cap altre dia). També pots fer-nos saber si ets vegetarià, vegà, etc.
             </label>
             <textarea
               placeholder="Escriu-ho aquí"
