@@ -163,7 +163,7 @@
 
   .boda-link {
     cursor: pointer;
-    font-size: 20px; /* igual que header-text */
+    font-size: 20px; 
     font-weight: 500;
     text-decoration: none;
     color: black;
@@ -199,20 +199,23 @@
   flex-direction: column;
   gap: 1.5rem;
 
-  padding: 6rem 1.5rem 2rem; /* espacio arriba para no tapar header */
+  padding: 8rem 1.5rem 2rem;
 
   transform: translateX(100%);
   transition: transform 0.3s ease;
 
-  z-index: 900; /* menor que el header */
+  z-index: 900; 
 }
 
-/* MENÚ ABIERTO */
+.header-title {
+  text-align: left;
+  font-size: 24px; 
+}
+
 .mobile-menu.open {
   transform: translateX(0);
 }
 
-/* Animación */
 @keyframes slideIn {
   from {
     transform: translateX(-100%);
