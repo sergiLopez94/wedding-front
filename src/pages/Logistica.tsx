@@ -28,7 +28,14 @@ return(
                 <img className='bus-icon' src={bus}></img>
                 <h3 className='header-bus'>bus</h3>
                 <p>Hi haurà un bus disponible per anar i tornar del centre de Girona al lloc de la boda<br /><br />
-                Més informació i horaris aviat</p>
+                  <ul>
+                    <li>Parada 1 (12:00h): Casa Rural. <br/> Passeig de la Llibertat, 18, 17150 Sant Gregori, Girona, España</li>
+                    <li>Parada 2 (12:15h): Girona Devesa <br/> pg. Devesa - av. de França, Parada P0108, 17007 Girona, España</li>
+                    <li>Parada 3 (12:45h): Arribada a la finca <br/> Mas Batlle, 17150 Sant Gregori, Girona, España</li>
+                  </ul>
+                </p>
+                <br/>
+                <p>Per la tornada, el bus us estarà esperant a les 23:45h a l'entrada de la finca</p><br/>
             </div>  
 
             <div className='taxi'>
